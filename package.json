@@ -1,0 +1,27 @@
+{
+  "name": "prefix-commit-msg",
+  "private": true,
+  "description": "A Git hook to automatically prefix commit messages with issue numbers from branch names.",
+  "version": "0.0.1",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/cli.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "tsdown --dts",
+    "dev": "tsdown --watch"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.29",
+    "tsdown": "latest",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.0"
+  }
+}
