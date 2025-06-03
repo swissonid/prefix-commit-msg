@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import * as fs from 'fs';
 import * as child_process from 'child_process';
 import { runPrepareCommitMsgHook } from './commit-msg-utils'; // Import the main hook function
